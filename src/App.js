@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import AffineEncryption from './components/AffineEncryption';
+import AffineDecryption from './components/AffineDecryption';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="flex justify-center items-center min-h-screen bg-gray-200">
+          <div className="flex space-x-8">
+              <AffineEncryption />
+              <AffineDecryption />
+          </div>
+      </div>
   );
 }
 
